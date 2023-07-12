@@ -1,5 +1,6 @@
-package com.improve10x.tddpractise;
+package com.improve10x.tddpractise.fibonacci;
 
+import com.improve10x.tddpractise.fibonacci.Fibonacci;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

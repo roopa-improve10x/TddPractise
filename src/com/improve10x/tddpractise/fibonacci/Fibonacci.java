@@ -1,4 +1,4 @@
-package com.improve10x.tddpractise;
+package com.improve10x.tddpractise.fibonacci;
 
 public class Fibonacci {
     public int find(int n) {
