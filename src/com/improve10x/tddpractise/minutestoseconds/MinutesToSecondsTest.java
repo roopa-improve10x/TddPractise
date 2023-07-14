@@ -24,8 +24,7 @@ public class MinutesToSecondsTest {
     @Test
     public void givenSeconds_returnMinutes() {
         Seconds seconds = new Seconds();
-        int minutes = seconds.convertSecsToMins(6);
-        assertEquals(360, minutes);
-
+        int minutes = seconds.convertSecsToMins(1000);
+        assertEquals(16, minutes);
     }
 }
