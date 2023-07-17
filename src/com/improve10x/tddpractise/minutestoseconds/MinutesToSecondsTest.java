@@ -22,9 +22,16 @@ public class MinutesToSecondsTest {
     }
 
     @Test
-    public void givenSeconds_returnMinutes() {
-        Seconds seconds = new Seconds();
-        int minutes = seconds.convertSecsToMins(1000);
-        assertEquals(16, minutes);
+    public void givenZeroMinutes_returnZero() {
+     Minutes minutes = new Minutes();
+     int seconds = minutes.convertMinsToSecs(0);
+     assertEquals(0, seconds);
+    }
+
+    @Test
+    public void givenNegativeNum_returnNegativeValue() {
+        Minutes minutes = new Minutes();
+        int seconds = minutes.convertMinsToSecs(-3);
+        assertEquals(-180, seconds);
     }
 }
