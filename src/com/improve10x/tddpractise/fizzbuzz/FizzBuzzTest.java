@@ -32,7 +32,7 @@ public class FizzBuzzTest {
     @Test
     public void givenFive_returnBuzz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String five = fizzBuzz.findFizzBuzz(15);
+        String five = fizzBuzz.findFizzBuzz(5);
         assertEquals("Buzz", five);
     }
 
