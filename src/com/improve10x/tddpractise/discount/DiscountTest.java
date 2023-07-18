@@ -23,7 +23,7 @@ public class DiscountTest {
     }
 
     @Test
-    public void givenMinusFifteenFive_returnFifteen() {
+    public void givenFifteenFive_returnFifteen() {
         Discount discount = new Discount();
         int finalPrice = discount.findDiscount(15, 5);
         assertEquals(15, finalPrice);
