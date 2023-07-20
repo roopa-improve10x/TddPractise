@@ -9,16 +9,16 @@ public class NthEvenTest {
     public void nothing() {}
 
     @Test
-    public void givenNegative_returnNegativeNumber() {
+    public void givenMinusTen_returnMinusOne() {
         EvenNumber evenNumber = new EvenNumber();
         int result = evenNumber.findNthEvenNumber(-10);
         assertEquals(-1, result);
     }
 
     @Test
-    public void givenNegativeValue_returnMinusOne() {
+    public void givenMinusOne_returnMinusOne() {
         EvenNumber evenNumber = new EvenNumber();
-        int result = evenNumber.findNthEvenNumber(-3);
+        int result = evenNumber.findNthEvenNumber(-1);
         assertEquals(-1, result);
     }
 
@@ -30,31 +30,31 @@ public class NthEvenTest {
     }
 
     @Test
-    public void givenTwo_returnSecondEvenNumber() {
+    public void givenFour_returnFourthEvenNumber() {
         EvenNumber evenNumber = new EvenNumber();
-        int result = evenNumber.findNthEvenNumber(2);
-        assertEquals(2, result);
+        int result = evenNumber.findNthEvenNumber(4);
+        assertEquals(6, result);
     }
 
     @Test
-    public void givenTwenty_return20thEvenNumber() {
+    public void givenTen_return10thEvenNumber() {
         EvenNumber evenNumber = new EvenNumber();
-        int result = evenNumber.findNthEvenNumber(20);
-        assertEquals(38, result);
+        int result = evenNumber.findNthEvenNumber(10);
+        assertEquals(18, result);
     }
 
     @Test
     public void given100_return100thEvenNumber() {
         EvenNumber evenNumber = new EvenNumber();
         int result = evenNumber.findNthEvenNumber(100);
-        assertEquals(98, result);
+        assertEquals(198, result);
     }
 
     @Test
-    public void given2000_return2000thEvenNumber() {
+    public void given1000_return1000thEvenNumber() {
         EvenNumber evenNumber = new EvenNumber();
-        int result = evenNumber.findNthEvenNumber(2000);
-        assertEquals(3998, result);
+        int result = evenNumber.findNthEvenNumber(1000);
+        assertEquals(1998, result);
     }
 
 }
