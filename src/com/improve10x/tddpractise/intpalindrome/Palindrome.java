@@ -2,6 +2,12 @@ package com.improve10x.tddpractise.intpalindrome;
 
 public class Palindrome {
     public boolean isPalindrome(int num) {
+        boolean result = false;
+        if(num == 0) {
+            return true;
+        } else if(num <= -1) {
+            return  true;
+        }
         int originalNumber = num;
         int reverseNumber = 0;
         while (num > 0) {
@@ -10,8 +16,8 @@ public class Palindrome {
             num = num / 10;
         }
         if (originalNumber == reverseNumber) {
-            return  true;
+            result = true;
         }
-        return false;
+        return result;
     }
 }
