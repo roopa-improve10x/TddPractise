@@ -37,10 +37,10 @@ public class FactorialTest {
     }
 
     @Test
-    public void givenFive_return120() {
+    public void givenTwo_return2() {
         Factorial factorial = new Factorial();
-        int factNum = factorial.getFactorial(5);
-        assertEquals(120, factNum);
+        int factNum = factorial.getFactorial(2);
+        assertEquals(2, factNum);
     }
 
     @Test
@@ -51,9 +51,16 @@ public class FactorialTest {
     }
 
     @Test
-    public void givenSeven_return5040() {
+    public void givenFour_return24() {
         Factorial factorial = new Factorial();
-        int factNum = factorial.getFactorial(-1);
-        assertEquals(-1, factNum);
+        int factNum = factorial.getFactorial(4);
+        assertEquals(24, factNum);
+    }
+
+    @Test
+    public void givenFive_return120() {
+        Factorial factorial = new Factorial();
+        int factNum = factorial.getFactorial(5);
+        assertEquals(120, factNum);
     }
 }
