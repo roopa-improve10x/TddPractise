@@ -15,33 +15,39 @@ public class LessThanTest {
     @Test
     public void nothing() {
     }
-    /* if two numbers sum is less than 100 then return true
-    * 10, 15 = 25 -> true
-    * 1, 99 = 100 -> true
-    * 100, 1 = 101 -> false
-    * 0, -1 -> -1 -> false
-    * 1, 0 = 1 -> true*/
     @Test
-    public void givenTwoInputs_returnResult() {
-        boolean result = number.isLessThan100(10, 15);
+    public void givenZeroZero_returnTrue() {
+        boolean result = number.isLessThan100(0, 0);
         assertEquals(true, result);
     }
 
     @Test
-    public void givenInputs_returnResult() {
+    public void givenZeroMinusOne_returnTrue() {
+        boolean result = number.isLessThan100(0, -1);
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void givenZeroOne_returnTrue() {
+        boolean result = number.isLessThan100(0, 1);
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void givenOneNinetyNine_returnTrue() {
         boolean result = number.isLessThan100(1, 99);
         assertEquals(true, result);
     }
 
     @Test
-    public void givenInput_returnResult() {
+    public void givenHundredOne_returnFalse() {
         boolean result = number.isLessThan100(100, 1);
         assertEquals(false, result);
     }
 
     @Test
-    public void givenNegative_returnFalse() {
-        boolean result = number.isLessThan100(0, -1);
-        assertEquals(true, result);
+    public void givenNinetyNineFive_returnFalse() {
+        boolean result = number.isLessThan100(99, 5);
+        assertEquals(false, result);
     }
 }
